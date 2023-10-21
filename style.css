@@ -1,103 +1,171 @@
-
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family:sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 .container {
-    display: flex;
-    justify-content:space-around;
-    flex-wrap: wrap;
-    background-color: #133461;
-    align-items: center;
-    color: white;
-    width: 100%;
-    padding: 0.3rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #133461;
+  align-items: center;
+  color: white;
+  width: 100%;
+  padding: 0.3rem;
 }
 
 .left {
-    font-size: 3rem;
-    font-weight: 700;
-    cursor: pointer;
-    margin-left: 3rem;
+  font-size: 3rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: 3rem;
 }
 
 .right {
-    display: flex;
-    justify-content: space-around;
-    gap: 2rem;
-    margin-top: 1rem;
-    cursor: pointer;
-    margin-right: 3rem;
-    font-size: 0.7rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  margin-right: 3rem;
+  font-size: 0.7rem;
 }
-.container2{
-    background-color:#EAEFF7 ;
-    align-items: center;
-    display: flex;
-    
+.container2 {
+  background-color: #eaeff7;
+  align-items: center;
+  display: flex;
+}
+.down {
+  display: flex;
+  margin-left: 15rem;
+  padding: 0.1rem;
+}
+.home {
+  color: "#7E91AC";
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+.down1 {
+  background-color: #0f4b9d;
+  color: white;
+  font-size: 0.7rem;
+  padding: 0.3rem;
+  margin: 0.2rem;
+  cursor: pointer;
+}
+.container3 {
+  background-color: #f5f8fb;
+  box-shadow: rgb(169, 169, 226) 0px 25px 20px -20px;
+}
+.input {
+  text-align: center;
+  position: relative;
+  padding: 0.5rem;
+  border: none;
+  width: 66vw;
+  margin: 1rem 15rem;
+}
+.search {
+  position: absolute;
+  right: 15rem;
+  top: 7.6rem;
+}
+.filter1 {
+  width: 70vw;
+  margin: 1rem 1rem;
+  color: #a4cafd;
+}
+.filter-slider {
+  width: 70vw;
+  margin: 1rem 14rem;
+  overflow: hidden;
+  background-color: #f5f8fb;
+}
 
+.slider {
+  display: flex;
+  white-space: nowrap;
+  padding: 1rem;
+  gap: 1rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
-.down{
-    display: flex;
-    margin-left: 15rem;
-    padding: 0.1rem;
 
-    
+.filter {
+  min-width: 100px;
+  background-color: white;
+  color: #104288;
+  border: 2px solid #90befe;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
 }
-.home{
-    color:"#7E91AC";
-    text-align: center;
-    align-items: center;
-    margin: auto;
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
 }
-.down1{
-    background-color: #0F4B9D;
-    color: white;
-    font-size: 0.7rem;
-    padding: 0.3rem;
-    margin: 0.2rem;
-    cursor: pointer;
-}
-.container3{
-    background-color: #F5F8FB;
-}
-.input{
-    text-align: center;
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
     position: relative;
-    padding: 0.5rem;
-    border: none;
-    width: 66vw;
-    margin: 1rem 15rem;
+    border-radius: 8px;
 }
-.search{
-    position: absolute;
-    right: 15rem;
-    top: 7.6rem;
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: #000;
 }
 
 @media screen and (max-width: 500px) {
-    .left {
-        display: none;
-    }
+  .left {
+    display: none;
+  }
 
-    .right {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-    .down{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .down1{
-        margin: auto;
-    }
-    .home{
-        margin: auto;
-    }
+  .right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .down1 {
+    margin: auto;
+  }
+  .home {
+    margin: auto;
+  }
+  .filter {
+    min-width: 100px;
+  }
+  .filter-slider {
+    margin: auto;
+    width: 60vw;
+  }
 }
