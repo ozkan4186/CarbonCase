@@ -224,7 +224,7 @@
 .showContent {
   display: flex;
   width: 70vw;
-  margin: 0.5rem 14rem;
+  margin: 0.1rem 14rem;
 }
 .showContent1 {
   border: none;
@@ -243,7 +243,7 @@
   flex-wrap: wrap;
   justify-content: center;
   max-width: 90vw;
-  margin:auto;
+  margin: auto;
   gap: 4rem;
 }
 
@@ -255,7 +255,7 @@
   justify-content: center;
   gap: 1.2rem;
   padding: 2rem;
-  margin: 0.5rem auto;
+  margin: 4rem auto;
   width: 72vw;
 }
 
@@ -272,28 +272,52 @@ img {
   width: 20rem;
   background-repeat: no-repeat;
 }
-.content2{
+.content2 {
   width: 68vw;
   margin: 2rem;
   margin-left: 15rem;
 }
-.darkblue{
-  color:#071527 ;
+.darkblue {
+  color: #071527;
   font-size: 1.2rem;
   font-weight: 700;
 }
-.color{
+.color {
   width: 68vw;
   height: 35vh;
-  background-color: #EDEDED;
+  background-color: #ededed;
 }
-.show{
-margin-top: 5rem;
-margin-bottom: -5rem;
+.show {
+  margin-top: 0;
+  margin-bottom: 0;
+  border-bottom: 1px dashed #104288;
+  width: 67vw;
+}
+.pagination {
+  display: inline-block;
+  width: 72vw;
+  margin-left: 13rem;
+}
 
- border-bottom: 1px dashed #104288;
- /* border: 2px solid red; */
- width: 67vw;
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid #888;
+  margin: 0.5rem;
+}
+
+.pagination a.active {
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 768px) {
@@ -374,7 +398,7 @@ margin-bottom: -5rem;
   .content2 {
     width: 90vw; /* Yeni bir genişlik ayarı, gerektiğiniz gibi değiştirebilirsiniz. */
     margin: 2rem auto; /* Sağ ve sol kenar boşlukları otomatik yapılır. */
-    margin-left: 1;  /* margin-left sıfırlanır. */
+    margin-left: 1; /* margin-left sıfırlanır. */
   }
 
   .darkblue {
@@ -384,6 +408,18 @@ margin-bottom: -5rem;
   .color {
     width: 84vw; /* Yeni bir genişlik ayarı, gerektiğiniz gibi değiştirebilirsiniz. */
     height: 10vh;
-    background-color: #EDEDED;
-   } /* Yükseklik otomatik olarak ayarlanır. */
+    background-color: #ededed;
+  }
+  .show {
+    /* width: 100vw; */
+    text-align: center;
+  }
+  .pagination{
+    width: 100vw;
+    margin: auto;
+  }
+  .pagination a {
+    padding: 2px 7px; /* Daha küçük yastıklama ve biraz daha büyük kenar yarıçapı */
+    margin: 0;
+  }
 }
