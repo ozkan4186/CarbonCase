@@ -98,3 +98,25 @@ const clickableElement = document.getElementById("clickableElement");
 clickableElement.addEventListener("click", function () {
   clickableElement.style.borderBottom = "1px dashed "; // Tıklandığında kesik çizgiyi görünür kılar
 });
+
+// Input alanını ve kartları seçin
+const aramaInput = document.getElementById("aramaInput");
+const kartlar = document.querySelectorAll(".content1 .card");
+
+// Input'a bir "input" olay dinleyicisi ekleyin
+aramaInput.addEventListener("input", kartlariFiltrele);
+
+function kartlariFiltrele() {
+  // Kullanıcının girdisini alın ve küçük harfe çevirin
+  const aramaKelimesi = aramaInput.value.toLowerCase();
+
+  // Kartları gizle veya göster
+  kartlar.forEach((kart) => {
+    const kartMetni = kart.textContent.toLowerCase();
+    if (kartMetni.includes(aramaKelimesi) && (aramaKelimesi.length === 2 || aramaKelimesi.length === 3)) {
+      kart.style.display = "block"; // Eşleşen kartları göster
+    } else {
+      kart.style.display = "none"; // Eşleşmeyen kartları gizle
+    }
+  });
+}
