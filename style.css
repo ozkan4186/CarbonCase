@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  overflow-x: hidden
 }
 
 .container {
@@ -114,20 +115,23 @@
 .container3 {
   background-color: #f5f8fb;
   box-shadow: rgb(169, 169, 226) 0px 25px 20px -20px;
-  
+
 }
 .input {
-  text-align: center;
+  text-align: left;
   position: relative;
   padding: 0.5rem;
   border: none;
   width: 66vw;
   margin: 1rem 15rem;
 }
+.input::placeholder {
+  color: #385d92;
+}
 .search {
   position: absolute;
-  right: 15rem;
-  top: 7.6rem;
+  right: 14rem;
+  top: 8rem;
 }
 .filter1 {
   width: 70vw;
@@ -151,7 +155,7 @@
 }
 
 .filter {
-  min-width: 100px;
+  min-width: 210px;
   background-color: white;
   color: #104288;
   border: 2px solid #90befe;
@@ -261,12 +265,65 @@
   .accordion-list li {
     width: 24rem;
   }
+ .input {
+    width: 90%; /* Giriş kutusunun genişliğini değiştirin */
+    margin: 1rem auto; /* Giriş kutusunu yatayda merkezleyin */
+  }
 
-  .filter {
-    min-width: 100px;
+  .search {
+    position: relative; /* Arama ikonunu yerleşik konumuna geri getirin */
+    top: 0; /* Arama ikonunu sıfır konumuna getirin */
+    right: 0; /* Arama ikonunu sıfır konumuna getirin */
+  }
+   .filter1 {
+    width: 100%;
+    margin: 1rem 0;
   }
   .filter-slider {
-    margin: auto;
-    width: 60vw;
+    width: 100%;
+    margin: 1rem 0;
+    overflow: auto; /* Değişiklik: overflow: hidden; yerine overflow: auto; */
   }
+  .slider {
+    display: flex;
+    flex-wrap: nowrap; /* Değişiklik: white-space: nowrap; yerine flex-wrap: nowrap; */
+    padding: 1rem;
+    gap: 1rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .filter {
+    min-width: 100px; /* Genişlik ayarını düzenledim */
+  }
+  .modal {
+    display: none;
+  }
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 }
