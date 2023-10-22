@@ -8,11 +8,10 @@
 .container {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
   background-color: #133461;
   align-items: center;
   color: white;
-  width: 100%;
+  max-width: 100%;
   padding: 0.3rem;
 }
 
@@ -32,22 +31,26 @@
   margin-right: 3rem;
   font-size: 0.7rem;
 }
+
+/* CONTAİNER 2 */
+
+/* Normal stil */
 .container2 {
   background-color: #eaeff7;
   align-items: center;
   display: flex;
+  width: 100%;
+  padding: 0.3rem;
 }
+
 .down {
   display: flex;
-  margin-left: 15rem;
+  margin-left: 13rem;
   padding: 0.1rem;
+  overflow-x: hidden;
+  max-width: 100%;
 }
-.home {
-  color: "#7E91AC";
-  text-align: center;
-  align-items: center;
-  margin: auto;
-}
+
 .down1 {
   background-color: #0f4b9d;
   color: white;
@@ -55,10 +58,63 @@
   padding: 0.3rem;
   margin: 0.2rem;
   cursor: pointer;
+  border-bottom: 1px dashed transparent; /* Tıklanmadan önce çizgiyi kaldırın */
 }
+
+.down2 {
+  margin-right: 0.3rem;
+  cursor: pointer;
+  border-bottom: 1px dashed #104288; /* Tıklandığında çizgi ekleyin */
+}
+
+.home {
+  color: #7E91AC;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  border-bottom: 1px dashed transparent; /* Tıklanmadan önce home altındaki çizgiyi kaldırın */
+}
+
+.up {
+  border-bottom: 1px dashed transparent; /* Tıklanmadan önce up altındaki çizgiyi kaldırın */
+}
+
+.accordion-list {
+  width: 100%;
+  padding: 0;
+  margin-left: 14.8rem;
+  list-style-type: none;
+}
+
+.accordion-list li {
+  border-bottom: 1px solid #7E91AC; /* Çizgi ekler, renk ayarlayabilirsiniz */
+  padding: 4px 0;
+  width: 18rem; /* İstenirse aralık ekleyebilirsiniz */
+  background-color: #EAEFF7;
+  font-weight: 700;
+  color: #133461;
+}
+
+.accordion-list li:last-child {
+  border-bottom: none;
+}
+
+.close {
+  color: #0f4b9d;
+  margin-left: 9rem;
+  font-size: 0.6rem;
+  cursor: pointer;
+  margin-top: 0.4rem;
+}
+
+
+
+/* CONTAİNER3  */
+
 .container3 {
   background-color: #f5f8fb;
   box-shadow: rgb(169, 169, 226) 0px 25px 20px -20px;
+  
 }
 .input {
   text-align: center;
@@ -106,39 +162,83 @@
 }
 
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 600px;
-    position: relative;
-    border-radius: 8px;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+  border-radius: 8px;
 }
 
 .close-button {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .close-button:hover {
-    color: #000;
+  color: #000;
 }
-
+.clear {
+  display: flex;
+  justify-content: end;
+  margin-right: 12rem;
+}
+.clear2 {
+  display: flex;
+}
+.property {
+  display: flex;
+  width: 70vw;
+  margin: 1rem 14rem;
+}
+.showContent {
+  display: flex;
+  width: 70vw;
+  margin: 0.5rem 14rem;
+}
+.showContent1 {
+  border: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: #0f4b9d;
+  padding: 0.3rem 2rem;
+  margin-left: 1rem;
+  color: white;
+  cursor: pointer;
+}
+.content1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80vw;
+  margin: 0.5rem 14rem;
+  gap: 4rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-;
+  width: 20rem;
+  gap: 2;
+}
 @media screen and (max-width: 500px) {
   .left {
     display: none;
@@ -151,16 +251,17 @@
     align-items: center;
   }
   .down {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-left: 0; /* Örnek olarak sol margini sıfırla */
   }
-  .down1 {
-    margin: auto;
+
+  .accordion-list {
+    margin-left: 0; /* Örnek olarak sol margini sıfırla */
   }
-  .home {
-    margin: auto;
+
+  .accordion-list li {
+    width: 24rem;
   }
+
   .filter {
     min-width: 100px;
   }

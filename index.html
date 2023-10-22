@@ -31,17 +31,28 @@
     <div class="container2">
       <div class="down">
         <i class="down1 fa-solid fa-chevron-down"></i>
-        <p class="home">Home.Path.Path</p>
+        <i class="down2 fa-solid fa-chevron-up" style="display: none"></i>
+        <p class="home" id="clickableElement">Home.Path.Path</p>
       </div>
-      <!-- <div class="up" > -->
-      <!-- <i class=" down2 fa-solid fa-chevron-up"></i> -->
-      <!-- <p>Close</p> -->
-      <!-- </div> -->
+      <div class="up" style="display: none">
+        <p class="close">CLOSE</p>
+      </div>
     </div>
+    <ul class="accordion-list" style="display: none">
+      <li>LUCTUS COMMODO</li>
+      <li>MORBI A NIBH SED</li>
+      <li>ELIT DICTUMRHONCUS</li>
+      <li>CRASUT</li>
+    </ul>
+
     <!-- SEARCH AND FİLTERS-->
     <div class="container3">
       <div>
-        <input type="text" class="input" />
+        <input
+          type="text"
+          placeholder="Select Location,e.g test"
+          class="input"
+        />
         <i
           class="search fa-solid fa-magnifying-glass"
           style="color: #54bfff"
@@ -70,16 +81,65 @@
       </div>
       <div id="modal" class="modal">
         <div class="modal-content">
-            <span class="close-button" id="close-button">&times;</span>
-            <p>Modal içeriği burada olacak.</p>
+          <span class="close-button" id="close-button">&times;</span>
+          <p>Modal içeriği burada olacak.</p>
         </div>
-    </div>
-
-      <div class="property">
-        <div>Property List</div>
-        <div>Details</div>
+      </div>
+      <div class="clear">
+        <p>CLEAR ALL</p>
+        <div class="clear2">
+          <i class="fa-regular fa-map" style="color: #8baadf"></i>
+          <p class="map">MAP</p>
+        </div>
+      </div>
+      <div class="showContent">
+        <button id="showContent1" class="showContent1">Propety List</button>
+        <button id="showContent2" class="showContent1">Details</button>
       </div>
     </div>
+
+
+
+    
+    <div id="content1" class="content1">
+      <div class="card">
+        <img src="./img/case.png" alt="" />
+        <p>Smartly Designed Luxury Apartments</p>
+      </div>
+      <div class="card">
+        <img src="./img/case.png" alt="" />
+        <p>Smartly Designed Luxury Seafront Apartments</p>
+      </div>
+      <div class="card">
+        <img src="./img/case.png" alt="" />
+        <p>Smartly Designed Luxury Seafront Apartments</p>
+      </div>
+      <div class="card">
+        <img src="./img/case.png" alt="" />
+        <p>Smartly Designed Luxury Apartments</p>
+      </div>
+      <div class="card">
+        <img src="./img/case.png" alt="" />
+        <p>Smartly Designed Luxury Seafront Apartments</p>
+      </div>
+      <div class="card">
+        <img src="./img/case.png" alt="" />
+        <p>Smartly Designed Luxury Seafront Apartments</p>
+      </div>
+      <div class="card">
+        <img src="./img/case.png" alt="" />
+        <p>Smartly Designed Luxury Apartments</p>
+      </div>
+      <div class="card">
+        <img src="./img/case.png" alt="" />
+        <p>Smartly Designed Luxury Seafront Apartments</p>
+      </div>
+      <div class="card">
+        <img src="./img/case.png" alt="" />
+        <p>Smartly Designed Luxury Seafront Apartments</p>
+      </div>
+    </div>
+    <div id="content2" class="content2">Bu, İçerik 2'dir.</div>
 
     <script src="app.js"></script>
   </body>
