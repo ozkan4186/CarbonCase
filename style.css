@@ -257,7 +257,6 @@
   padding: 2rem;
   margin: 0.5rem auto;
   width: 72vw;
-
 }
 
 .card {
@@ -265,16 +264,31 @@
   margin: auto;
   align-items: center;
   border: 1px solid gray;
-  color:#556D8D;
+  color: #556d8d;
   font-weight: 900;
 }
 
-img{
+img {
   width: 20rem;
   background-repeat: no-repeat;
 }
+.content2{
+  width: 68vw;
+  margin: 2rem;
+  margin-left: 15rem;
+}
+.darkblue{
+  color:#071527 ;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.color{
+  width: 68vw;
+  height: 35vh;
+  background-color: #EDEDED;
+}
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .left {
     display: none;
   }
@@ -341,7 +355,6 @@ img{
     width: 80vw;
     margin: auto;
     margin-top: 2rem;
-    
   }
   .content1 {
     gap: 6rem 10rem;
@@ -350,4 +363,19 @@ img{
   .card {
     width: 19rem;
   }
+  .content2 {
+    width: 90vw; /* Yeni bir genişlik ayarı, gerektiğiniz gibi değiştirebilirsiniz. */
+    margin: 2rem auto; /* Sağ ve sol kenar boşlukları otomatik yapılır. */
+    margin-left: 1;  /* margin-left sıfırlanır. */
+  }
+
+  .darkblue {
+    font-size: 1rem; /* Yazı boyutunu küçültün. */
+  }
+
+  .color {
+    width: 84vw; /* Yeni bir genişlik ayarı, gerektiğiniz gibi değiştirebilirsiniz. */
+    height: 10vh;
+    background-color: #EDEDED;
+   } /* Yükseklik otomatik olarak ayarlanır. */
 }
