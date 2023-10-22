@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-  overflow-x: hidden
+  overflow-x: hidden;
 }
 
 .container {
@@ -69,7 +69,7 @@
 }
 
 .home {
-  color: #7E91AC;
+  color: #7e91ac;
   text-align: center;
   align-items: center;
   margin: auto;
@@ -88,10 +88,10 @@
 }
 
 .accordion-list li {
-  border-bottom: 1px solid #7E91AC; /* Çizgi ekler, renk ayarlayabilirsiniz */
+  border-bottom: 1px solid #7e91ac; /* Çizgi ekler, renk ayarlayabilirsiniz */
   padding: 4px 0;
   width: 18rem; /* İstenirse aralık ekleyebilirsiniz */
-  background-color: #EAEFF7;
+  background-color: #eaeff7;
   font-weight: 700;
   color: #133461;
 }
@@ -108,14 +108,11 @@
   margin-top: 0.4rem;
 }
 
-
-
 /* CONTAİNER3  */
 
 .container3 {
   background-color: #f5f8fb;
   box-shadow: rgb(169, 169, 226) 0px 25px 20px -20px;
-
 }
 .input {
   text-align: left;
@@ -202,10 +199,28 @@
   display: flex;
   justify-content: end;
   margin-right: 12rem;
+  gap: 5;
 }
+.vertical-line {
+  background: #9db8df;
+  width: 2px; /* Çizgi genişliği */
+  height: 20px; /* Çizgi uzunluğu */
+  margin-right: 1rem;
+}
+
 .clear2 {
   display: flex;
+  justify-content: space-between;
 }
+.clearall {
+  margin-right: 1rem;
+  color: #385d92;
+}
+.map {
+  margin-left: 1rem;
+  color: #385d92;
+}
+
 .property {
   display: flex;
   width: 70vw;
@@ -265,7 +280,7 @@
   .accordion-list li {
     width: 24rem;
   }
- .input {
+  .input {
     width: 90%; /* Giriş kutusunun genişliğini değiştirin */
     margin: 1rem auto; /* Giriş kutusunu yatayda merkezleyin */
   }
@@ -275,7 +290,7 @@
     top: 0; /* Arama ikonunu sıfır konumuna getirin */
     right: 0; /* Arama ikonunu sıfır konumuna getirin */
   }
-   .filter1 {
+  .filter1 {
     width: 100%;
     margin: 1rem 0;
   }
@@ -298,32 +313,9 @@
   .modal {
     display: none;
   }
-  
-  
-  
-  
-
-  
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+  .clear {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
 }
