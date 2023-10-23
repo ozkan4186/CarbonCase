@@ -66,6 +66,7 @@
   margin-right: 0.3rem;
   cursor: pointer;
   border-bottom: 1px dashed #104288; /* Tıklandığında çizgi ekleyin */
+  
 }
 
 .home {
@@ -114,9 +115,11 @@
   background-color: #f5f8fb;
   box-shadow: rgb(169, 169, 226) 0px 25px 20px -20px;
 }
+.inputs{
+  position: relative;
+}
 .input {
   text-align: left;
-  position: relative;
   padding: 0.5rem;
   border: none;
   width: 66vw;
@@ -127,8 +130,8 @@
 }
 .search {
   position: absolute;
-  right: 14rem;
-  top: 8rem;
+  right: 13rem;
+  top: 1.3rem;
 }
 .filter1 {
   width: 70vw;
@@ -346,13 +349,17 @@ img {
     width: 24rem;
   }
   .input {
-    width: 90%; /* Giriş kutusunun genişliğini değiştirin */
+    width: 100%; /* Giriş kutusunun genişliğini değiştirin */
     margin: 1rem auto; /* Giriş kutusunu yatayda merkezleyin */
+  }
+  .inputs{
+    position: relative;
+    width: 100vw;
   }
 
   .search {
-    position: relative; /* Arama ikonunu yerleşik konumuna geri getirin */
-    top: 0; /* Arama ikonunu sıfır konumuna getirin */
+    position: absolute; /* Arama ikonunu yerleşik konumuna geri getirin */
+    top: 1; /* Arama ikonunu sıfır konumuna getirin */
     right: 0; /* Arama ikonunu sıfır konumuna getirin */
   }
   .filter1 {
@@ -373,7 +380,7 @@ img {
     -webkit-overflow-scrolling: touch;
   }
   .filter {
-    min-width: 100px; /* Genişlik ayarını düzenledim */
+    min-width: 170px; /* Genişlik ayarını düzenledim */
   }
   .modal {
     display: none;
@@ -422,7 +429,7 @@ img {
     margin: auto;
   }
   .pagination a {
-    padding: 2px 7px; /* Daha küçük yastıklama ve biraz daha büyük kenar yarıçapı */
+    padding: 2px 6px; /* Daha küçük yastıklama ve biraz daha büyük kenar yarıçapı */
     margin: 0;
   }
 }
