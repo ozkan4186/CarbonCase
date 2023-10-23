@@ -58,11 +58,15 @@ const content2 = document.getElementById("content2");
 showButton1.addEventListener("click", () => {
   content1.style.display = "block";
   content2.style.display = "none";
+  showButton1.style.backgroundColor = "blue";
+  showButton2.style.backgroundColor = "gray"; // Doğru yazım
 });
 
 showButton2.addEventListener("click", () => {
   content1.style.display = "none";
   content2.style.display = "block";
+  showButton2.style.backgroundColor = "blue"
+  showButton1.style.backgroundColor = "gray"; // Doğru 
 });
 
 const down1 = document.querySelector(".down1");

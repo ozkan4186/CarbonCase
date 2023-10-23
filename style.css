@@ -232,11 +232,14 @@
   border-top-right-radius: 10px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  background-color: #0f4b9d;
+  background-color: gray;
   padding: 0.3rem 2rem;
   margin-left: 1rem;
   color: white;
   cursor: pointer;
+}
+.showContent1 .active {
+  background-color: blue;
 }
 .content1 {
   display: flex;
