@@ -35,7 +35,6 @@
 
 /* CONTAİNER 2 */
 
-/* Normal stil */
 .container2 {
   background-color: #eaeff7;
   align-items: center;
@@ -59,14 +58,13 @@
   padding: 0.3rem;
   margin: 0.2rem;
   cursor: pointer;
-  border-bottom: 1px dashed transparent; /* Tıklanmadan önce çizgiyi kaldırın */
+  border-bottom: 1px dashed transparent;
 }
 
 .down2 {
   margin-right: 0.3rem;
   cursor: pointer;
-  border-bottom: 1px dashed #104288; /* Tıklandığında çizgi ekleyin */
-  
+  border-bottom: 1px dashed #104288;
 }
 
 .home {
@@ -74,11 +72,11 @@
   text-align: center;
   align-items: center;
   margin: auto;
-  border-bottom: 1px dashed transparent; /* Tıklanmadan önce home altındaki çizgiyi kaldırın */
+  border-bottom: 1px dashed transparent;
 }
 
 .up {
-  border-bottom: 1px dashed transparent; /* Tıklanmadan önce up altındaki çizgiyi kaldırın */
+  border-bottom: 1px dashed transparent;
 }
 
 .accordion-list {
@@ -89,9 +87,9 @@
 }
 
 .accordion-list li {
-  border-bottom: 1px solid #7e91ac; /* Çizgi ekler, renk ayarlayabilirsiniz */
+  border-bottom: 1px solid #7e91ac;
   padding: 4px 0;
-  width: 18rem; /* İstenirse aralık ekleyebilirsiniz */
+  width: 18rem;
   background-color: #eaeff7;
   font-weight: 700;
   color: #133461;
@@ -115,7 +113,7 @@
   background-color: #f5f8fb;
   box-shadow: rgb(169, 169, 226) 0px 25px 20px -20px;
 }
-.inputs{
+.inputs {
   position: relative;
 }
 .input {
@@ -338,29 +336,29 @@ img {
     align-items: center;
   }
   .down {
-    margin-left: 0; /* Örnek olarak sol margini sıfırla */
+    margin-left: 0;
   }
 
   .accordion-list {
-    margin-left: 0; /* Örnek olarak sol margini sıfırla */
+    margin-left: 0;
   }
 
   .accordion-list li {
     width: 24rem;
   }
   .input {
-    width: 100%; /* Giriş kutusunun genişliğini değiştirin */
-    margin: 1rem auto; /* Giriş kutusunu yatayda merkezleyin */
+    width: 100%;
+    margin: 1rem auto;
   }
-  .inputs{
+  .inputs {
     position: relative;
     width: 100vw;
   }
 
   .search {
-    position: absolute; /* Arama ikonunu yerleşik konumuna geri getirin */
-    top: 1; /* Arama ikonunu sıfır konumuna getirin */
-    right: 0; /* Arama ikonunu sıfır konumuna getirin */
+    position: absolute;
+    top: 1;
+    right: 0;
   }
   .filter1 {
     width: 100%;
@@ -369,18 +367,18 @@ img {
   .filter-slider {
     width: 100%;
     margin: 1rem 0;
-    overflow: auto; /* Değişiklik: overflow: hidden; yerine overflow: auto; */
+    overflow: auto;
   }
   .slider {
     display: flex;
-    flex-wrap: nowrap; /* Değişiklik: white-space: nowrap; yerine flex-wrap: nowrap; */
+    flex-wrap: nowrap;
     padding: 1rem;
     gap: 1rem;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
   .filter {
-    min-width: 170px; /* Genişlik ayarını düzenledim */
+    min-width: 170px;
   }
   .modal {
     display: none;
@@ -406,17 +404,17 @@ img {
     width: 19rem;
   }
   .content2 {
-    width: 90vw; /* Yeni bir genişlik ayarı, gerektiğiniz gibi değiştirebilirsiniz. */
-    margin: 2rem auto; /* Sağ ve sol kenar boşlukları otomatik yapılır. */
-    margin-left: 1; /* margin-left sıfırlanır. */
+    width: 90vw;
+    margin: 2rem auto;
+    margin-left: 1;
   }
 
   .darkblue {
-    font-size: 1rem; /* Yazı boyutunu küçültün. */
+    font-size: 1rem;
   }
 
   .color {
-    width: 84vw; /* Yeni bir genişlik ayarı, gerektiğiniz gibi değiştirebilirsiniz. */
+    width: 84vw;
     height: 10vh;
     background-color: #ededed;
   }
@@ -424,12 +422,12 @@ img {
     /* width: 100vw; */
     text-align: center;
   }
-  .pagination{
+  .pagination {
     width: 100vw;
     margin: auto;
   }
   .pagination a {
-    padding: 2px 6px; /* Daha küçük yastıklama ve biraz daha büyük kenar yarıçapı */
+    padding: 2px 6px;
     margin: 0;
   }
 }
