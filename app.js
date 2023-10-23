@@ -68,7 +68,7 @@ showButton2.addEventListener("click", () => {
   showButton2.style.backgroundColor = "blue";
   showButton1.style.backgroundColor = "gray";
 });
-
+// ACCORDİON
 const down1 = document.querySelector(".down1");
 const down2 = document.querySelector(".down2");
 const up = document.querySelector(".up");
